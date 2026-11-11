@@ -705,6 +705,7 @@ ol {
 
 .card__tag {
   align-self: flex-start;
+  width: fit-content;
   padding: 4px 12px;
   border-radius: 999px;
   background: var(--accent-soft);
