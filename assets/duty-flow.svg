@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="班长工作流程：通知、分工、跟进、复盘四个步骤">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef3ff"/>
+      <stop offset="1" stop-color="#eef7f4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#fbg)"/>
+
+  <!-- 连接线 -->
+  <path d="M96 250 H704" stroke="#c3d0e6" stroke-width="3" stroke-dasharray="10 9"/>
+  <path d="M704 250 l-16 -8 v16 z" fill="#c3d0e6"/>
+
+  <!-- 节点 01 -->
+  <g>
+    <circle cx="150" cy="250" r="62" fill="#ffffff" stroke="#2f5bff" stroke-width="3"/>
+    <text x="150" y="262" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="30" font-weight="700" fill="#2f5bff">01</text>
+    <text x="150" y="356" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="600" fill="#121a2b">读懂通知</text>
+    <text x="150" y="382" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">谁 · 何时 · 做什么</text>
+  </g>
+
+  <!-- 节点 02 -->
+  <g>
+    <circle cx="336" cy="250" r="62" fill="#ffffff" stroke="#e0a94a" stroke-width="3"/>
+    <text x="336" y="262" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="30" font-weight="700" fill="#c97d15">02</text>
+    <text x="336" y="356" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="600" fill="#121a2b">拆成分工</text>
+    <text x="336" y="382" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">每人一件具体的事</text>
+  </g>
+
+  <!-- 节点 03 -->
+  <g>
+    <circle cx="522" cy="250" r="62" fill="#ffffff" stroke="#17a673" stroke-width="3"/>
+    <text x="522" y="262" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="30" font-weight="700" fill="#0f8f63">03</text>
+    <text x="522" y="356" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="600" fill="#121a2b">跟进兜底</text>
+    <text x="522" y="382" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">提前一天再提醒</text>
+  </g>
+
+  <!-- 节点 04 -->
+  <g>
+    <circle cx="706" cy="250" r="62" fill="#ffffff" stroke="#6d5bd0" stroke-width="3"/>
+    <text x="706" y="262" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="30" font-weight="700" fill="#5a49bd">04</text>
+    <text x="706" y="356" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="600" fill="#121a2b">复盘留档</text>
+    <text x="706" y="382" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">下次能更快</text>
+  </g>
+
+  <text x="96" y="88" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">一件事在班里流动的四个节点，缺一环就会返工</text>
+</svg>

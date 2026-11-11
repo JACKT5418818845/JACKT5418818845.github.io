@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="书堆插画：四本叠放的书和一本摊开的书">
+  <defs>
+    <linearGradient id="bbg2" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff6ea"/>
+      <stop offset="1" stop-color="#f4f0ff"/>
+    </linearGradient>
+    <linearGradient id="spine1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d6bff"/>
+      <stop offset="1" stop-color="#1d3fd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bbg2)"/>
+  <circle cx="650" cy="120" r="96" fill="#ffe8c4" opacity="0.55"/>
+
+  <!-- 书堆 -->
+  <g>
+    <rect x="196" y="326" width="408" height="54" rx="8" fill="#1f7a52"/>
+    <rect x="196" y="326" width="14" height="54" rx="6" fill="#0f5c3c"/>
+    <rect x="230" y="344" width="180" height="8" rx="4" fill="#c9ead9" opacity="0.65"/>
+
+    <rect x="212" y="268" width="380" height="58" rx="8" fill="#e0a94a"/>
+    <rect x="212" y="268" width="14" height="58" rx="6" fill="#b9862f"/>
+    <rect x="246" y="288" width="150" height="8" rx="4" fill="#fff3df" opacity="0.85"/>
+
+    <rect x="184" y="208" width="420" height="60" rx="8" fill="url(#spine1)"/>
+    <rect x="184" y="208" width="14" height="60" rx="6" fill="#132fa8"/>
+    <rect x="218" y="228" width="206" height="9" rx="4.5" fill="#dbe3ff" opacity="0.85"/>
+    <rect x="218" y="244" width="120" height="9" rx="4.5" fill="#b9c8f5" opacity="0.9"/>
+
+    <rect x="204" y="150" width="392" height="58" rx="8" fill="#6d5bd0"/>
+    <rect x="204" y="150" width="14" height="58" rx="6" fill="#4d3cae"/>
+    <rect x="238" y="170" width="170" height="8" rx="4" fill="#e6e0ff" opacity="0.9"/>
+  </g>
+
+  <!-- 摊开的书 -->
+  <g transform="translate(452 344)">
+    <path d="M0 30 C 52 8, 96 8, 148 26 C 196 8, 240 8, 288 30 L288 100 C 240 80, 196 82, 148 100 C 96 82, 52 80, 0 100 Z" fill="#ffffff" stroke="#cfd9ea" stroke-width="2"/>
+    <path d="M148 26 V100" stroke="#cfd9ea" stroke-width="2"/>
+    <g stroke="#dbe3f2" stroke-width="3" stroke-linecap="round">
+      <path d="M26 48 H120"/>
+      <path d="M26 64 H108"/>
+      <path d="M26 80 H118"/>
+      <path d="M176 48 H268"/>
+      <path d="M176 64 H250"/>
+      <path d="M176 80 H264"/>
+    </g>
+  </g>
+
+  <!-- 书签 -->
+  <path d="M470 62 h26 v54 l-13 -12 -13 12 z" fill="#e0574a"/>
+
+  <text x="64" y="472" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#8a7a63">科幻看设定，悬疑看结构，现实题材看人怎么选</text>
+</svg>

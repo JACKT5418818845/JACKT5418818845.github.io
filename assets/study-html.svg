@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="HTML 语义结构示意图：header、nav、main、section、footer 层层嵌套">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef3ff"/>
+      <stop offset="1" stop-color="#f8f5ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#hbg)"/>
+
+  <!-- 外层：body -->
+  <rect x="64" y="48" width="672" height="424" rx="18" fill="#ffffff" stroke="#c9d6ee" stroke-width="2"/>
+  <text x="88" y="80" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#8b9ab5">&lt;body&gt;</text>
+
+  <!-- header -->
+  <rect x="92" y="96" width="616" height="64" rx="12" fill="#e8edff" stroke="#2f5bff" stroke-width="1.5"/>
+  <text x="112" y="135" font-family="'JetBrains Mono',Consolas,monospace" font-size="16" fill="#1d3fd0">&lt;header&gt;</text>
+  <rect x="300" y="116" width="120" height="24" rx="12" fill="#2f5bff" opacity="0.25"/>
+  <rect x="436" y="116" width="80" height="24" rx="12" fill="#2f5bff" opacity="0.25"/>
+  <rect x="532" y="116" width="80" height="24" rx="12" fill="#2f5bff" opacity="0.25"/>
+
+  <!-- main -->
+  <rect x="92" y="180" width="440" height="212" rx="12" fill="#f7f9ff" stroke="#8ea8e8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="112" y="208" font-family="'JetBrains Mono',Consolas,monospace" font-size="16" fill="#3c5aa8">&lt;main&gt;</text>
+
+  <rect x="112" y="222" width="400" height="66" rx="10" fill="#ffffff" stroke="#c9d6ee" stroke-width="1.5"/>
+  <text x="130" y="248" font-family="'JetBrains Mono',Consolas,monospace" font-size="14" fill="#5d6b82">&lt;section id="about"&gt;</text>
+  <rect x="130" y="258" width="220" height="9" rx="4.5" fill="#d7e0f4"/>
+  <rect x="130" y="272" width="150" height="9" rx="4.5" fill="#e6ecf9"/>
+
+  <rect x="112" y="302" width="400" height="72" rx="10" fill="#ffffff" stroke="#c9d6ee" stroke-width="1.5"/>
+  <text x="130" y="328" font-family="'JetBrains Mono',Consolas,monospace" font-size="14" fill="#5d6b82">&lt;section id="skills"&gt;</text>
+  <rect x="130" y="338" width="90" height="26" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+  <rect x="230" y="338" width="90" height="26" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+  <rect x="330" y="338" width="90" height="26" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+
+  <!-- aside -->
+  <rect x="552" y="180" width="156" height="212" rx="12" fill="#fff7e9" stroke="#e0a94a" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="570" y="208" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#a06a14">&lt;aside&gt;</text>
+  <rect x="570" y="224" width="120" height="9" rx="4.5" fill="#f0dcb6"/>
+  <rect x="570" y="242" width="96" height="9" rx="4.5" fill="#f3e3c4"/>
+  <rect x="570" y="260" width="110" height="9" rx="4.5" fill="#f3e3c4"/>
+  <rect x="570" y="288" width="120" height="52" rx="8" fill="#ffffff" stroke="#ecd5a9"/>
+  <rect x="584" y="304" width="70" height="8" rx="4" fill="#f0dcb6"/>
+  <rect x="584" y="320" width="46" height="8" rx="4" fill="#f5e8cd"/>
+
+  <!-- footer -->
+  <rect x="92" y="408" width="616" height="44" rx="10" fill="#e9f7f1" stroke="#17a673" stroke-width="1.5"/>
+  <text x="112" y="436" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#0f8f63">&lt;footer&gt;</text>
+  <rect x="560" y="422" width="126" height="14" rx="7" fill="#bfe9d8"/>
+
+  <!-- 标注 -->
+  <text x="64" y="506" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">结构树：footer 与 header 同级，main 里放 section，aside 是补充信息</text>
+</svg>

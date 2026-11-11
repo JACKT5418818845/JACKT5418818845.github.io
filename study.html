@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="陶思涵的 WEB 设计学习笔记：HTML 语义结构、CSS 盒模型与响应式布局、JavaScript 与 DOM，附两个可交互的实验。">
+  <meta name="author" content="陶思涵">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>学习笔记 | 陶思涵的个人主页</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="study">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">陶</span>
+        <span class="brand__text">
+          <strong>陶思涵</strong>
+          <small>计算机 2603 班</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="主导航">
+        <ul>
+          <li><a href="index.html">主页</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="study.html" class="is-active" aria-current="page">学习笔记</a></li>
+          <li><a href="life.html">兴趣生活</a></li>
+          <li><a href="duty.html">班长日常</a></li>
+          <li><a href="contact.html">联系我</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button"
+              aria-pressed="false" aria-label="切换到深色模式">
+        <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="index.html">主页</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">学习笔记</span>
+    </nav>
+
+    <header class="page-hero">
+      <p class="section__index">02 / 学习笔记</p>
+      <h1>一个页面，是怎么长出来的</h1>
+      <p class="page-hero__lead">
+        这学期我最大的收获，是把 HTML、CSS、JavaScript 的分工理清楚了：
+        结构归标签，外观归样式，行为归脚本。下面三块笔记，加上两个能动手点的实验。
+      </p>
+    </header>
+
+    <!-- ---------- 笔记一：HTML ---------- -->
+    <section class="section" aria-labelledby="note-html">
+      <div class="knowledge">
+        <div class="knowledge__text reveal">
+          <p class="card__tag">笔记 01</p>
+          <h2 id="note-html">HTML：先想清楚“这块内容是什么”</h2>
+          <p>
+            写结构时我会先问自己：这是页头、正文还是页脚？这一段是独立的文章，
+            还是主内容的补充？想清楚语义，标签自然就选出来了，
+            不用满屏 <code>div</code> 也能把页面搭稳。
+          </p>
+          <ul class="check-list">
+            <li><strong>header / nav</strong>：页头与导航，屏幕阅读器可以直接跳转。</li>
+            <li><strong>main / section / article</strong>：主内容、分区、独立成篇的内容。</li>
+            <li><strong>aside / footer</strong>：补充信息与页脚版权。</li>
+            <li>标题按 <strong>h1 → h2 → h3</strong> 递减，一页只保留一个 h1。</li>
+            <li>图片写 <code>alt</code>，表单用 <code>label</code> 关联输入框。</li>
+          </ul>
+        </div>
+        <figure class="figure reveal">
+          <img src="assets/study-html.svg" width="800" height="520"
+               alt="HTML 语义结构示意图：body 内包含 header、main（含两个 section）、aside 与 footer">
+          <figcaption>语义标签不是为了“好看”，而是为了让浏览器和辅助技术读懂结构。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ---------- 笔记二：CSS 盒模型 ---------- -->
+    <section class="section section--tint" aria-labelledby="note-box">
+      <div class="knowledge knowledge--reverse">
+        <div class="knowledge__text reveal">
+          <p class="card__tag card__tag--alt">笔记 02</p>
+          <h2 id="note-box">CSS：盒模型是尺寸的“账本”</h2>
+          <p>
+            一个元素占多宽，不是看 <code>width</code> 一个数字就够的。
+            默认的 <code>content-box</code> 下，<code>width</code> 只算内容区，
+            内边距和边框要另外加；换成 <code>border-box</code>，
+            它们就被算进宽度里，布局一下子好算很多。
+          </p>
+          <p>
+            我现在的习惯是全局先写 <code>* { box-sizing: border-box; }</code>，
+            需要演示“原始算法”的地方再单独改回来——比如下面实验二的盒子。
+          </p>
+          <p class="note-hint">
+            计算题：内容 300 + 左右内边距 20×2 + 左右边框 2×2 =
+            <strong>344px</strong>；换成 border-box 后，外沿还是 300px，内容缩到 256px。
+          </p>
+        </div>
+        <figure class="figure reveal">
+          <img src="assets/study-box.svg" width="800" height="520"
+               alt="CSS 盒模型示意图：从内到外是 content、padding、border、margin，外沿宽度 344 像素">
+          <figcaption>从里到外四层：content → padding → border → margin。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ---------- 笔记三：响应式 ---------- -->
+    <section class="section" aria-labelledby="note-grid">
+      <div class="knowledge">
+        <div class="knowledge__text reveal">
+          <p class="card__tag card__tag--third">笔记 03</p>
+          <h2 id="note-grid">响应式：让同一份 HTML 适配三种宽度</h2>
+          <p>
+            布局用 Grid 与 Flexbox，断点用媒体查询。我的写法是“移动优先”：
+            默认单列，屏幕变宽再加列，而不是先写三列再往回删。
+          </p>
+          <ul class="check-list">
+            <li><code>640px</code> 起两列，<code>960px</code> 起三列。</li>
+            <li>卡片本身用 <code>grid-template-columns: repeat(3, minmax(0, 1fr))</code>，避免长单词把列撑破。</li>
+            <li>页面顶部永远有 <code>&lt;meta name="viewport"&gt;</code>。</li>
+            <li>图片统一 <code>max-width: 100%; height: auto;</code>。</li>
+          </ul>
+          <p>
+            窄屏时我还要检查一件事：有没有出现横向滚动条。
+            这个站点在 390px 与 1440px 下都验证过，没有横向溢出。
+          </p>
+        </div>
+        <figure class="figure reveal">
+          <img src="assets/study-grid.svg" width="800" height="520"
+               alt="响应式示意图：390 像素一列、768 像素两列、1200 像素三列">
+          <figcaption>同一份 HTML，在三个视口下分别是 1、2、3 列。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ---------- 交互实验 ---------- -->
+    <section class="section section--tint" id="lab" aria-labelledby="lab-title">
+      <header class="section__head reveal">
+        <p class="section__index">动手实验</p>
+        <h2 id="lab-title">点一点，看 DOM 怎么变</h2>
+        <p class="section__desc">
+          下面两个实验都是真的在跑：按钮监听事件，回调里改文字、改属性、切类名。
+          刷新页面后会回到初始状态。
+        </p>
+      </header>
+
+      <div class="lab-grid">
+        <article class="card lab-card reveal">
+          <h3>实验一 · 点击按钮，修改 DOM</h3>
+          <p class="lab-card__hint">
+            按钮监听 click 事件，回调里修改 textContent、title 属性，并用 classList 切换高亮类。
+          </p>
+          <div class="demo-actions">
+            <button class="btn btn--primary" id="hello-btn" type="button">打个招呼</button>
+            <button class="btn btn--ghost" id="reset-hello" type="button">重置</button>
+          </div>
+          <p class="message" id="message" aria-live="polite">等待点击</p>
+          <p class="lab-card__meta">已点击 <span id="click-count">0</span> 次</p>
+        </article>
+
+        <article class="card lab-card reveal">
+          <h3>实验二 · 盒模型换算</h3>
+          <p class="lab-card__hint">
+            内容宽 300px、左右内边距各 20px、左右边框各 2px。
+            切换 box-sizing，看外沿宽度的实际变化。
+          </p>
+          <div class="box-stage">
+            <div class="box-demo" id="box-demo">宽 300px · padding 20px · border 2px</div>
+          </div>
+          <div class="demo-actions">
+            <button class="btn btn--primary" id="box-toggle" type="button" aria-pressed="false">
+              切换为 border-box
+            </button>
+          </div>
+          <p class="lab-card__meta">
+            实测外沿宽度：<strong id="box-width">—</strong>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- 学习计划 ---------- -->
+    <section class="section" aria-labelledby="plan-title">
+      <header class="section__head reveal">
+        <p class="section__index">计划</p>
+        <h2 id="plan-title">本学期剩下的安排</h2>
+        <p class="section__desc">进度条是自评，不是分数；写下来是为了知道下一步补哪里。</p>
+      </header>
+
+      <div class="skills-panel reveal">
+        <div class="skills-panel__meters">
+          <h3>学习进度（自评）</h3>
+          <div class="meter">
+            <div class="meter__label"><span>HTML 语义与结构</span><span>85%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 85%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>CSS 布局与响应式</span><span>78%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 78%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>JavaScript 与 DOM</span><span>70%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 70%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>开发者工具调试</span><span>66%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 66%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel__plan">
+          <h3>接下来三个月</h3>
+          <ol class="timeline">
+            <li>
+              <span class="timeline__when">11 月</span>
+              <p>把这个站点收尾：补页面、修窄屏、部署到 GitHub Pages。</p>
+            </li>
+            <li>
+              <span class="timeline__when">12 月</span>
+              <p>用 JavaScript 做一个小工具（待办清单或课程表），练习数据与渲染。</p>
+            </li>
+            <li>
+              <span class="timeline__when">寒假</span>
+              <p>补数据结构基础，同时把阅读书单里的三本读完。</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="link-list reveal">
+        <h3>我常翻的参考资料</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN · HTML 文档</a></li>
+          <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener noreferrer">MDN · CSS 文档</a></li>
+          <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">MDN · JavaScript 文档</a></li>
+          <li><a href="https://developer.chrome.com/docs/devtools?hl=zh-cn" target="_blank" rel="noopener noreferrer">Chrome DevTools 官方文档</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="翻页">
+      <a class="pager__link" href="about.html">
+        <span>上一页</span>
+        <strong>← 关于我</strong>
+      </a>
+      <a class="pager__link pager__link--next" href="life.html">
+        <span>下一页</span>
+        <strong>兴趣生活 →</strong>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-about">
+        <p class="footer-brand">陶思涵 · 个人主页</p>
+        <p class="footer-meta">新生实践课《WEB 设计进阶》作业 · 计算机 2603 班 · <span id="year">2026</span></p>
+        <p class="footer-meta">纯手写 HTML / CSS / JavaScript，无框架、无外部依赖。</p>
+      </div>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="index.html">主页</a>
+        <a href="about.html">关于我</a>
+        <a href="study.html">学习笔记</a>
+        <a href="life.html">兴趣生活</a>
+        <a href="duty.html">班长日常</a>
+        <a href="contact.html">联系我</a>
+      </nav>
+    </div>
+    <p class="footer-top"><a href="#top">回到顶部 ↑</a></p>
+  </footer>
+</body>
+</html>

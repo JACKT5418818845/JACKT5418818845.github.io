@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="响应式布局示意：390 像素一列、768 像素两列、1200 像素三列">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef7f4"/>
+      <stop offset="1" stop-color="#eef3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#gbg)"/>
+
+  <!-- 手机 390 -->
+  <g>
+    <rect x="56" y="96" width="150" height="300" rx="20" fill="#ffffff" stroke="#c9d6ee" stroke-width="2"/>
+    <rect x="104" y="108" width="54" height="6" rx="3" fill="#dde5f4"/>
+    <rect x="72" y="130" width="118" height="52" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="72" y="192" width="118" height="52" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="72" y="254" width="118" height="52" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="72" y="318" width="76" height="9" rx="4.5" fill="#dde5f4"/>
+    <rect x="72" y="334" width="100" height="9" rx="4.5" fill="#eaeffa"/>
+    <text x="131" y="428" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#3c5aa8">390px</text>
+    <text x="131" y="452" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">1 列</text>
+  </g>
+
+  <!-- 平板 768 -->
+  <g>
+    <rect x="264" y="76" width="230" height="340" rx="16" fill="#ffffff" stroke="#c9d6ee" stroke-width="2"/>
+    <rect x="284" y="98" width="94" height="128" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="388" y="98" width="88" height="128" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="284" y="240" width="94" height="128" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="388" y="240" width="88" height="128" rx="7" fill="#e8edff" stroke="#bfd0f7"/>
+    <text x="379" y="448" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#3c5aa8">768px</text>
+    <text x="379" y="472" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">2 列</text>
+  </g>
+
+  <!-- 桌面 1200 -->
+  <g>
+    <rect x="540" y="96" width="216" height="212" rx="10" fill="#ffffff" stroke="#c9d6ee" stroke-width="2"/>
+    <rect x="548" y="104" width="200" height="10" rx="5" fill="#e6ecf9"/>
+    <rect x="556" y="132" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="618" y="132" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="680" y="132" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="556" y="216" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="618" y="216" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <rect x="680" y="216" width="54" height="72" rx="6" fill="#e8edff" stroke="#bfd0f7"/>
+    <text x="648" y="336" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#3c5aa8">1200px</text>
+    <text x="648" y="360" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">3 列</text>
+  </g>
+
+  <!-- 断点标记 -->
+  <path d="M56 390 H748" stroke="#cfd9ea" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text x="400" y="46" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#7b8aa1">同一个页面，三种宽度：640px 与 960px 是两个断点</text>
+</svg>
