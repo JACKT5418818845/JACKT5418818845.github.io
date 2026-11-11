@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="陶思涵的头像">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="20" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d6bff"/>
+      <stop offset="0.55" stop-color="#2040c8"/>
+      <stop offset="1" stop-color="#101a4d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd089" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0.15"/>
+    </linearGradient>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="0.9" fill="#ffffff" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="320" height="320" fill="url(#bg)"/>
+  <rect width="320" height="320" fill="url(#dots)"/>
+  <rect width="320" height="320" fill="url(#glow)"/>
+
+  <circle cx="160" cy="160" r="126" fill="none" stroke="url(#ring)" stroke-width="1.5" stroke-dasharray="3 7" opacity="0.85"/>
+  <circle cx="160" cy="160" r="104" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="160" cy="160" r="104" fill="none" stroke="#ffffff" stroke-opacity="0.22"/>
+
+  <text x="160" y="196" text-anchor="middle" fill="#fdfcf8"
+        font-family="'Songti SC','Source Han Serif SC','Noto Serif CJK SC','SimSun',Georgia,serif"
+        font-size="104" font-weight="600" letter-spacing="4">陶</text>
+
+  <text x="160" y="238" text-anchor="middle" fill="#cdd8ff" fill-opacity="0.9"
+        font-family="'Segoe UI',system-ui,sans-serif" font-size="12" letter-spacing="6">2603</text>
+
+  <path d="M64 264 Q160 300 256 264" fill="none" stroke="#ffd089" stroke-opacity="0.45" stroke-width="1.5"/>
+</svg>

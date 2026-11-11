@@ -1,0 +1,6 @@
+# 本地预览与测试产物，不进入仓库
+.preview/
+probe.html
+*.log
+Thumbs.db
+desktop.ini

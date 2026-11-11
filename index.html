@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="陶思涵的个人主页：计算机 2603 班班长，喜欢足球、篮球与阅读。用 HTML、CSS 与 JavaScript 从零手写。">
+  <meta name="author" content="陶思涵">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>陶思涵 · 个人主页 | 计算机 2603 班</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- ============ 页头：品牌、导航、主题切换 ============ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">陶</span>
+        <span class="brand__text">
+          <strong>陶思涵</strong>
+          <small>计算机 2603 班</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="主导航">
+        <ul>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#skills">学习与技能</a></li>
+          <li><a href="#interests">兴趣爱好</a></li>
+          <li><a href="#duty">班长日常</a></li>
+          <li><a href="#lab">互动实验</a></li>
+          <li><a href="#contact">联系我</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button"
+              aria-pressed="false" aria-label="切换到深色模式">
+        <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 首屏 ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            计算机 2603 班 · 班长
+          </p>
+          <h1 id="hero-title">
+            你好，我是<strong>陶思涵</strong>
+          </h1>
+          <p class="hero__lead">
+            性格开朗、做事负责，喜欢把班级里的事情张罗得井井有条；
+            也喜欢在球场和书页之间，给自己留一块安静的地方。
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#about">认识我</a>
+            <a class="btn btn--ghost" href="#lab">打个招呼</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt>班级角色</dt>
+              <dd>班长</dd>
+            </div>
+            <div>
+              <dt>球场爱好</dt>
+              <dd>足球 · 篮球</dd>
+            </div>
+            <div>
+              <dt>安静时刻</dt>
+              <dd>读小说</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__portrait">
+          <div class="portrait-ring" aria-hidden="true"></div>
+          <img class="portrait" src="assets/avatar.svg" width="320" height="320"
+               alt="陶思涵的头像：深蓝底色上的「陶」字标识">
+          <p class="portrait__caption">2603 · 陶</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 关于我 ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <header class="section__head reveal">
+        <p class="section__index">01 / 关于我</p>
+        <h2 id="about-title">把“负责”两个字，做成本能</h2>
+        <p class="section__desc">
+          我是计算机 2603 班的陶思涵。开朗不是嗓门大，而是遇事先站出来；
+          负责也不是口号，而是每一件小事都有人跟进到底。
+        </p>
+      </header>
+
+      <div class="about-grid">
+        <article class="card card--intro reveal">
+          <h3>我是谁</h3>
+          <p class="lede">
+            一个把班级事务和球场约战都排进日程表的计算机专业新生。
+          </p>
+          <p>
+            刚进大学时，我以为“班长”就是传话的人。真正做起来才发现，
+            它更像一个项目经理：要把通知拆成大家看得懂的一句话，
+            要在截止时间前把材料收齐，也要在有人掉队时悄悄补上一把。
+          </p>
+          <p>
+            我喜欢和人打交道，也喜欢把事情做成。这两件事听起来不一样，
+            但在我这里常常是同一件事——先听懂别人要什么，再把路铺好。
+          </p>
+          <p class="inherit-note">
+            这段话没有单独设置颜色，它继承自父级卡片。
+          </p>
+        </article>
+
+        <aside class="card card--facts reveal" aria-labelledby="facts-title">
+          <h3 id="facts-title">基本信息</h3>
+          <dl class="facts">
+            <div><dt>姓名</dt><dd>陶思涵</dd></div>
+            <div><dt>班级</dt><dd>计算机 2603 班</dd></div>
+            <div><dt>担任</dt><dd>班长</dd></div>
+            <div><dt>性格</dt><dd>开朗 · 负责 · 好社交</dd></div>
+            <div><dt>运动</dt><dd>足球、篮球</dd></div>
+            <div><dt>阅读</dt><dd>各类小说</dd></div>
+            <div><dt>正在学</dt><dd>HTML · CSS · JavaScript</dd></div>
+          </dl>
+          <p class="facts__note">
+            想认识更多，可以看看我的
+            <a href="#skills">学习计划</a>，或者直接到<a href="#lab">互动区</a>留句话。
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 学习与技能 ============ -->
+    <section class="section section--tint" id="skills" aria-labelledby="skills-title">
+      <header class="section__head reveal">
+        <p class="section__index">02 / 学习与技能</p>
+        <h2 id="skills-title">这门课，我这样拆成三步</h2>
+        <p class="section__desc">
+          HTML 负责结构与含义，CSS 负责外观与布局，JavaScript 负责行为。
+          下面三张卡片，就是我这一学期的主要抓手。
+        </p>
+      </header>
+
+      <div class="skill-cards">
+        <article class="card card--skill reveal">
+          <span class="card__tag">结构</span>
+          <h3>HTML：语义化组织内容</h3>
+          <p>
+            用 header、nav、main、section、article、footer 把页面分区，
+            标题按 h1 → h3 逐级递进，图片补齐 alt，表单绑定 label。
+          </p>
+          <ul class="check-list">
+            <li>语义标签替代满屏 div</li>
+            <li>一份标题层级，一种阅读顺序</li>
+            <li>键盘与读屏也能走完全页</li>
+          </ul>
+        </article>
+
+        <article class="card card--skill reveal">
+          <span class="card__tag card__tag--alt">外观</span>
+          <h3>CSS：选择器、盒模型与布局</h3>
+          <p>
+            类选择器与 id 选择器控制优先级，颜色可以继承；
+            box-sizing 决定宽度的算法；Flexbox 排一维，Grid 排二维，
+            媒体查询让布局随视口变形。
+          </p>
+          <ul class="check-list">
+            <li>640px 两列，960px 三列</li>
+            <li>间距用 gap，宽度用 minmax</li>
+            <li>深色模式只换变量，不重写样式</li>
+          </ul>
+        </article>
+
+        <article class="card card--skill reveal">
+          <span class="card__tag card__tag--third">行为</span>
+          <h3>JavaScript：事件与 DOM</h3>
+          <p>
+            用 querySelector 找到节点，用 addEventListener 监听点击与输入，
+            再用 textContent、classList、setAttribute 把变化写回页面。
+          </p>
+          <ul class="check-list">
+            <li>点击按钮，文字与样式同时变</li>
+            <li>表单先校验，再渲染新内容</li>
+            <li>主题与留言存进 localStorage</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="skills-panel reveal">
+        <div class="skills-panel__meters">
+          <h3>学习进度（自评）</h3>
+          <div class="meter">
+            <div class="meter__label"><span>HTML 语义与结构</span><span>85%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 85%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>CSS 布局与响应式</span><span>78%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 78%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>JavaScript 与 DOM</span><span>70%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 70%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter__label"><span>开发者工具调试</span><span>66%</span></div>
+            <div class="meter__track"><div class="meter__bar" style="--value: 66%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel__plan">
+          <h3>本学期计划</h3>
+          <ol class="timeline">
+            <li>
+              <span class="timeline__when">9 月</span>
+              <p>补齐 HTML 与 CSS 基础，能独立写出一个静态页面。</p>
+            </li>
+            <li>
+              <span class="timeline__when">10 月</span>
+              <p>吃透盒模型、Flexbox 与 Grid，做一次响应式改造。</p>
+            </li>
+            <li>
+              <span class="timeline__when">11 月</span>
+              <p>用 JavaScript 给页面加交互，学会在控制台定位问题。</p>
+            </li>
+            <li>
+              <span class="timeline__when">12 月</span>
+              <p>把个人主页部署到 GitHub Pages，持续更新作品。</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 兴趣爱好 ============ -->
+    <section class="section" id="interests" aria-labelledby="interests-title">
+      <header class="section__head reveal">
+        <p class="section__index">03 / 兴趣爱好</p>
+        <h2 id="interests-title">球场、书页，和一群人</h2>
+        <p class="section__desc">
+          运动让我保持精力，小说让我保留想象力，社交让我知道事情该找谁一起做。
+        </p>
+      </header>
+
+      <div class="interest-grid">
+        <article class="interest reveal">
+          <span class="interest__icon" aria-hidden="true">⚽</span>
+          <h3>足球</h3>
+          <p>喜欢跑动的感觉。边路拿球、抬头找人，团队配合比个人表演更好看。</p>
+          <p class="interest__meta">周末约球 · 边前卫</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__icon" aria-hidden="true">🏀</span>
+          <h3>篮球</h3>
+          <p>下课后的半场最解压。投篮手感不好的时候，就多传球、多防守。</p>
+          <p class="interest__meta">班级联赛 · 后卫</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__icon" aria-hidden="true">📖</span>
+          <h3>阅读</h3>
+          <p>各类小说都读：科幻看设定，悬疑看结构，现实题材看人怎么选。</p>
+          <p class="interest__meta">睡前半小时 · 纸质优先</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__icon" aria-hidden="true">🤝</span>
+          <h3>社交</h3>
+          <p>喜欢把不同圈子的人凑到一起。组织一次活动，比认识十个人更有成就感。</p>
+          <p class="interest__meta">班级活动 · 组局担当</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 班长日常 ============ -->
+    <section class="section section--tint" id="duty" aria-labelledby="duty-title">
+      <header class="section__head reveal">
+        <p class="section__index">04 / 班长日常</p>
+        <h2 id="duty-title">班长不是头衔，是接口</h2>
+        <p class="section__desc">
+          老师、同学、社团、教务，四边的信息在我这里汇合，再由我翻译成大家愿意看的样子。
+        </p>
+      </header>
+
+      <div class="duty-grid">
+        <blockquote class="quote reveal">
+          <p>“事情交给我，就不用再有人惦记第二遍。”</p>
+          <footer>—— 我给自己定的班长标准</footer>
+        </blockquote>
+
+        <ul class="duty-list reveal">
+          <li>
+            <h3>传达与提醒</h3>
+            <p>把通知拆成“谁、什么时候、做什么”，重要节点提前一天再提醒一次。</p>
+          </li>
+          <li>
+            <h3>组织与协调</h3>
+            <p>班级活动先定时间地点，再分工；球赛、聚餐、志愿活动都按这个流程走。</p>
+          </li>
+          <li>
+            <h3>跟进与兜底</h3>
+            <p>材料收不齐就一对一问原因，有人掉队就补位，不让任何一个人掉队。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 互动实验区 ============ -->
+    <section class="section" id="lab" aria-labelledby="lab-title">
+      <header class="section__head reveal">
+        <p class="section__index">05 / 互动实验</p>
+        <h2 id="lab-title">HTML、CSS、JavaScript 在这里碰面</h2>
+        <p class="section__desc">
+          下面四块内容都是真的在跑：点击、输入、切换，都能看到 DOM 的变化。
+          刷新页面后，除主题和留言外都会回到初始状态。
+        </p>
+      </header>
+
+      <div class="lab-grid">
+        <!-- 实验一：事件与 DOM -->
+        <article class="card lab-card reveal">
+          <h3>实验一 · 点击按钮，修改 DOM</h3>
+          <p class="lab-card__hint">
+            按钮监听 click 事件，回调里修改 textContent、title 属性，并用 classList 切换高亮类。
+          </p>
+          <div class="demo-actions">
+            <button class="btn btn--primary" id="hello-btn" type="button">打个招呼</button>
+            <button class="btn btn--ghost" id="reset-hello" type="button">重置</button>
+          </div>
+          <p class="message" id="message" aria-live="polite">等待点击</p>
+          <p class="lab-card__meta">已点击 <span id="click-count">0</span> 次</p>
+        </article>
+
+        <!-- 实验二：盒模型 -->
+        <article class="card lab-card reveal">
+          <h3>实验二 · 盒模型换算</h3>
+          <p class="lab-card__hint">
+            内容宽 300px、左右内边距各 20px、左右边框各 2px。
+            切换 box-sizing，看外沿宽度的实际变化。
+          </p>
+          <div class="box-stage">
+            <div class="box-demo" id="box-demo">宽 300px · padding 20px · border 2px</div>
+          </div>
+          <div class="demo-actions">
+            <button class="btn btn--primary" id="box-toggle" type="button" aria-pressed="false">
+              切换为 border-box
+            </button>
+          </div>
+          <p class="lab-card__meta">
+            实测外沿宽度：<strong id="box-width">—</strong>
+          </p>
+        </article>
+
+        <!-- 实验三：表单校验与渲染 -->
+        <article class="card lab-card lab-card--wide reveal">
+          <h3>实验三 · 留言板（校验 + 渲染 + 本地存储）</h3>
+          <p class="lab-card__hint">
+            称呼与留言都会先做非空与长度校验；通过后创建节点插入列表，
+            同时写入 localStorage，刷新后仍然保留。
+          </p>
+          <form class="guest-form" id="guest-form" novalidate>
+            <div class="field">
+              <label for="guest-name">你的称呼</label>
+              <input id="guest-name" name="name" type="text" maxlength="12"
+                     placeholder="例如：隔壁班的同学" autocomplete="nickname">
+            </div>
+            <div class="field field--grow">
+              <label for="guest-message">想说的话</label>
+              <input id="guest-message" name="message" type="text" maxlength="60"
+                     placeholder="一句话就好，比如「球场见」">
+            </div>
+            <button class="btn btn--primary" type="submit">发布留言</button>
+          </form>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <ul class="guest-list" id="guest-list" aria-live="polite"></ul>
+          <p class="lab-card__meta" id="guest-empty">还没有留言，来写第一条吧。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 联系我 ============ -->
+    <section class="section section--tint" id="contact" aria-labelledby="contact-title">
+      <header class="section__head reveal">
+        <p class="section__index">06 / 联系我</p>
+        <h2 id="contact-title">想聊球、聊书，或者聊班级的事</h2>
+        <p class="section__desc">
+          比赛约人、书单交换、班级协作，都可以直接找我。回复不一定最快，但一定会有回复。
+        </p>
+      </header>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="https://github.com/JACKT5418818845" target="_blank" rel="noopener noreferrer">
+          <span class="contact-card__label">GitHub</span>
+          <strong>JACKT5418818845</strong>
+          <span class="contact-card__note">这个主页的源码就放在这里 ↗</span>
+        </a>
+        <a class="contact-card reveal" href="#lab">
+          <span class="contact-card__label">留言板</span>
+          <strong>在页面里留一句话</strong>
+          <span class="contact-card__note">保存在你自己的浏览器里</span>
+        </a>
+        <div class="contact-card contact-card--static reveal">
+          <span class="contact-card__label">班级</span>
+          <strong>计算机 2603 班</strong>
+          <span class="contact-card__note">班长 · 陶思涵</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">陶思涵 · 个人主页</p>
+      <p class="footer-meta">
+        新生实践课《WEB 设计进阶》作业 ·
+        计算机 2603 班 ·
+        <span id="year">2026</span>
+      </p>
+      <p class="footer-meta">
+        纯手写 HTML / CSS / JavaScript，无框架、无外部依赖。
+      </p>
+    </div>
+
+    <details class="impl-notes">
+      <summary>本页实现要点（点击展开）</summary>
+      <ol>
+        <li>语义结构：header / nav / main / section / article / aside / footer，标题按 h1 → h3 递减。</li>
+        <li>样式与继承：外链 CSS，:root 变量统一色板；.card--intro 的段落不设 color，继承父级。</li>
+        <li>盒模型：实验二的盒子可在 content-box 与 border-box 间切换，宽度由 JS 实测。</li>
+        <li>布局：页头用 Flexbox，卡片区用 Grid，640px 两列、960px 三列。</li>
+        <li>交互：点击、输入、提交、滚动都会触发 JS，DOM 通过 textContent / classList / setAttribute / createElement 更新。</li>
+        <li>持久化：主题与留言写入 localStorage，刷新后恢复。</li>
+        <li>可访问性：跳转链接、可见焦点、aria-expanded / aria-live、prefers-reduced-motion。</li>
+      </ol>
+    </details>
+
+    <p class="footer-top"><a href="#top">回到顶部 ↑</a></p>
+  </footer>
+</body>
+</html>
